@@ -1,0 +1,565 @@
+/* =========================
+   ATS WRAPPER
+========================= */
+
+.ats-wrapper{
+    max-width:1400px;
+    margin:auto;
+    padding:30px;
+    color:#fff;
+}
+
+.ats-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.ats-header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.ats-header p{
+    color:#b8c2d4;
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+}
+
+/* =========================
+   Upload Section
+========================= */
+
+.upload-section{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.upload-section input{
+    background:#1e293b;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+}
+
+.upload-section button{
+    padding:12px 30px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.upload-section button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   Dashboard
+========================= */
+
+.ats-dashboard{
+    display:grid;
+    grid-template-columns:340px 1fr;
+    gap:25px;
+}
+
+/* =========================
+   Panels
+========================= */
+
+.left-panel,
+.right-panel{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* =========================
+   Common Cards
+========================= */
+
+.card,
+.resume-card,
+.score-card,
+.summary-card{
+    background:#111827;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.card h2,
+.resume-card h3,
+.score-card h3,
+.summary-card h2{
+    margin-bottom:20px;
+}
+
+/* =========================
+   Resume Preview
+========================= */
+
+.resume-card iframe{
+    width:100%;
+    height:420px;
+    border:none;
+    border-radius:12px;
+}
+
+/* =========================
+   Score Circle
+========================= */
+
+.score-card{
+    text-align:center;
+}
+
+.score-circle{
+
+    width:190px;
+    height:190px;
+
+    margin:20px auto;
+
+    border-radius:50%;
+
+    border:12px solid #3b82f6;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    animation:float 4s ease infinite;
+
+}
+
+.score-circle span{
+    font-size:52px;
+    font-weight:700;
+}
+
+.score-circle small{
+    color:#22c55e;
+    font-size:17px;
+    margin-top:8px;
+}
+
+.verdict{
+    color:#b8c2d4;
+    line-height:1.7;
+}
+
+/* =========================
+   Statistics
+========================= */
+
+.stats-grid{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+
+}
+
+.stat-card{
+
+    background:#1e293b;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+    background:#23324b;
+
+}
+
+.stat-card h4{
+
+    color:#9ca3af;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card span{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#3b82f6;
+
+}
+
+/* =========================
+   Contact & Sections
+========================= */
+
+.check-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.check-row:last-child{
+
+    border-bottom:none;
+
+}
+
+/* =========================
+   Section Scores
+========================= */
+
+.score-row{
+
+    display:grid;
+
+    grid-template-columns:170px 1fr 45px;
+
+    gap:15px;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+.bar{
+
+    height:8px;
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.fill{
+
+    height:100%;
+
+    background:linear-gradient(90deg,#3b82f6,#06b6d4);
+
+    border-radius:20px;
+
+    transition:1.5s;
+
+}
+/* =========================
+   Keyword Chips
+========================= */
+
+.chip-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.chip{
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.chip:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+/* =========================
+   Lists
+========================= */
+
+.card ul{
+    margin:0;
+    padding-left:20px;
+}
+
+.card li{
+    margin-bottom:12px;
+    color:#d1d5db;
+    line-height:1.6;
+}
+
+/* =========================
+   Summary Card
+========================= */
+
+.summary-card{
+
+    background:linear-gradient(
+        135deg,
+        #1e293b,
+        #111827
+    );
+
+    border-left:5px solid #3b82f6;
+
+}
+
+.summary-card p{
+
+    line-height:1.8;
+
+    color:#d1d5db;
+
+    font-size:16px;
+
+}
+
+/* =========================
+   Loading
+========================= */
+
+.loading-card{
+
+    background:#111827;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    animation:pulse 1.5s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+        opacity:.5;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.5;
+    }
+
+}
+
+/* =========================
+   Floating Score
+========================= */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+   Fade Animation
+========================= */
+
+.card,
+.resume-card,
+.score-card,
+.summary-card{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =========================
+   Hover
+========================= */
+
+.card:hover,
+.resume-card:hover,
+.score-card:hover,
+.summary-card:hover{
+
+    transform:translateY(-5px);
+
+    transition:.3s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* =========================
+   Scrollbar
+========================= */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:1000px){
+
+    .ats-dashboard{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .ats-wrapper{
+
+        padding:15px;
+
+    }
+
+    .ats-header h1{
+
+        font-size:2rem;
+
+    }
+
+    .ats-header p{
+
+        font-size:15px;
+
+    }
+
+    .upload-section{
+
+        flex-direction:column;
+
+    }
+
+    .upload-section input,
+    .upload-section button{
+
+        width:100%;
+
+    }
+
+    .resume-card iframe{
+
+        height:300px;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .score-row{
+
+        grid-template-columns:1fr;
+
+        gap:8px;
+
+    }
+
+    .score-circle{
+
+        width:150px;
+        height:150px;
+
+    }
+
+    .score-circle span{
+
+        font-size:40px;
+
+    }
+
+    .score-circle small{
+
+        font-size:14px;
+
+    }
+
+    .chip{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+}

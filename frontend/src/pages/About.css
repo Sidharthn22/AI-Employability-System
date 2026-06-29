@@ -1,0 +1,94 @@
+.about-page{
+    min-height:100vh;
+    background:#071233;
+    padding:50px 20px;
+    color:white;
+}
+
+.about-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.about-container h1{
+    text-align:center;
+    font-size:3.2rem;
+    margin-bottom:20px;
+}
+
+.about-intro{
+    max-width:850px;
+    margin:0 auto 50px;
+    text-align:center;
+    color:#cbd5e1;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.about-card{
+    background:#111827;
+    border:1px solid #1e40af;
+    border-radius:18px;
+    padding:30px;
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(37,99,235,.25);
+}
+
+.about-card h2{
+    color:#3b82f6;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.tech-section{
+    margin-top:60px;
+    text-align:center;
+}
+
+.tech-section h2{
+    margin-bottom:30px;
+}
+
+.tech-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.tech-list span{
+    background:#2563eb;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+
+.about-grid{
+    grid-template-columns:1fr;
+}
+
+.about-container h1{
+    font-size:2.5rem;
+}
+
+.about-intro{
+    font-size:16px;
+}
+
+}

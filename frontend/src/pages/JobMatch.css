@@ -1,0 +1,373 @@
+.jobmatch-wrapper{
+  max-width:1400px;
+  margin:auto;
+  padding:30px;
+  color:white;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.analyze-box{
+    width:100%;
+    background:#111827;
+    border:2px dashed #2563eb;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.analyze-box h1{
+    color:white;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#94a3b8;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.upload-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.file-btn{
+    background:#2563eb;
+    color:white;
+    padding:14px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.file-btn:hover{
+    background:#1d4ed8;
+}
+
+.file-btn input{
+    display:none;
+}
+
+.file-name{
+    background:#1e293b;
+    color:white;
+    padding:14px 20px;
+    border-radius:10px;
+    max-width:250px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.upload-section select{
+    background:#1e293b;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:14px 20px;
+    min-width:240px;
+}
+
+.upload-section button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:14px 28px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.upload-section button:hover{
+    background:#1d4ed8;
+}
+/* DASHBOARD */
+
+.dashboard{
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:25px;
+  margin-top:20px;
+}
+
+.left-panel,
+.right-panel{
+  background:#111827;
+  border-radius:20px;
+  padding:20px;
+}
+
+/* RESUME */
+
+.resume-preview-card{
+  background:#1e293b;
+  border-radius:15px;
+  padding:15px;
+}
+
+.resume-preview-card iframe{
+  width:100%;
+  height:350px;
+  border:none;
+  border-radius:10px;
+}
+
+/* SCORE */
+
+.score-card{
+  margin-top:20px;
+}
+
+.score-circle{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  border:12px solid #4f7cff;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  margin:auto;
+}
+
+.score-circle span{
+  font-size:42px;
+  font-weight:700;
+}
+
+.score-circle small{
+  color:#22c55e;
+  font-size:18px;
+}
+
+.progress-bar{
+  height:10px;
+  background:#1e293b;
+  border-radius:20px;
+  margin-top:20px;
+}
+
+.progress-fill{
+  height:100%;
+  background:#4f7cff;
+  border-radius:20px;
+}
+
+/* STATS */
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:20px;
+}
+
+.stat-box{
+  background:#1e293b;
+  padding:15px;
+  border-radius:12px;
+}
+
+.stat-box span{
+  font-size:28px;
+  font-weight:700;
+}
+
+.target-role{
+  margin-top:20px;
+  background:#1e293b;
+  padding:20px;
+  border-radius:12px;
+}
+
+/* RIGHT SIDE */
+
+.upload-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#1e293b;
+  padding:20px;
+  border-radius:15px;
+  margin-bottom:20px;
+}
+
+.success-badge{
+  background:#16a34a;
+  padding:8px 15px;
+  border-radius:20px;
+}
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:15px;
+}
+
+.detail-card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:15px;
+}
+
+.green h3{
+  color:#22c55e;
+}
+
+.blue h3{
+  color:#4f7cff;
+}
+
+.red h3{
+  color:#ef4444;
+}
+
+/* BOTTOM GRID */
+
+.bottom-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  margin-top:20px;
+}
+
+.role-bar{
+  display:grid;
+  grid-template-columns:150px 1fr 60px;
+  gap:15px;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.bar{
+  height:8px;
+  background:#0f172a;
+  border-radius:20px;
+}
+
+.fill{
+  height:100%;
+  background:#4f7cff;
+  border-radius:20px;
+}
+
+/* FLOATING IMAGE */
+
+.recommendation-card{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:25px;
+}
+
+.recommendation-image{
+  width:760px;
+  height:400px;
+  max-width:100%;
+  animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-15px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+
+/* TABLET */
+
+@media(max-width:1000px){
+
+  .dashboard{
+    grid-template-columns:1fr;
+  }
+
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+
+  .bottom-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .jobmatch-wrapper{
+    padding:10px;
+  }
+
+  .container h1{
+    text-align:center;
+    font-size:2rem;
+  }
+
+  .upload-section{
+    flex-direction:column;
+  }
+
+  .upload-section input,
+  .upload-section select,
+  .upload-section button{
+    width:100%;
+  }
+
+  .resume-preview-card iframe{
+    height:300px;
+  }
+
+  .score-circle{
+    width:150px;
+    height:150px;
+  }
+
+  .score-circle span{
+    font-size:34px;
+  }
+
+  .score-circle small{
+    font-size:14px;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+
+  .upload-card{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+  }
+
+  .role-bar{
+    grid-template-columns:1fr;
+    gap:5px;
+  }
+
+  .recommendation-image{
+    width:180px;
+    height:180px;
+  }
+}

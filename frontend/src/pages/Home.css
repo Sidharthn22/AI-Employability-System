@@ -1,0 +1,290 @@
+.home {
+  background: #071233;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+/* HERO */
+
+.hero {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+  padding: 10px 50px 70px 50px;
+
+  gap: 80px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 600px;
+  object-fit: contain;
+}
+
+/* TITLE */
+
+.hero-left h1 {
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 700;
+  margin-top: 1px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.hero-left h1 span {
+  color: #3b82f6;
+}
+
+/* DESCRIPTION */
+
+.hero-left p {
+  max-width: 650px;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+
+.hero-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 45px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  
+}
+
+.hero-btn:hover {
+  background: #1d4ed8;
+}
+
+/* FEATURES */
+
+.features-row {
+  display: flex;
+  gap: 40px;
+}
+
+.feature {
+  max-width: 220px;
+}
+
+.feature-icon {
+  font-size: 40px;
+  color: #3b82f6;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 15px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    gap: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 60px;
+    
+  }
+
+  .hero-left p {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .features-row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-right img {
+    max-width: 450px;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-right img {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .features-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .about-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
+.about-system {
+  max-width: 1300px;
+  margin: 80px auto;
+  padding: 0 50px;
+}
+
+.about-system h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-card {
+  background: #0f172a;
+  border: 1px solid #1e40af;
+  border-radius: 15px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+}
+
+.about-card h3 {
+  color: #3b82f6;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.about-card p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-size: 16px;
+}
+.hero-left {
+  flex: 1;
+  animation: slideLeft 1s ease;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideRight 1s ease;
+}
+.hero-right img {
+  width: 100%;
+  max-width: 600px;
+  object-fit: contain;
+
+  animation: floatImage 4s ease-in-out infinite;
+}
+.hero-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 45px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #3b82f6;
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.6);
+}
+.feature {
+  max-width: 220px;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  transition: all 0.3s ease;
+}
+
+.feature:hover .feature-icon {
+  color: #60a5fa;
+  transform: scale(1.2);
+}
+.about-card {
+  background: #0f172a;
+  border: 1px solid #1e40af;
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.4s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  border-color: #3b82f6;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.25);
+}
