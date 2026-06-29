@@ -9,7 +9,7 @@ function JobMatch() {
   const pdfUrl = file ? URL.createObjectURL(file) : "";
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/roles")
+    fetch("https://ai-employability-system.onrender.com/roles")
       .then((res) => res.json())
       .then((data) => {
         setRoles(data);
@@ -30,7 +30,7 @@ function JobMatch() {
     formData.append("file", file);
 
     const response = await fetch(
-      `http://127.0.0.1:8000/analyze-resume-role?role=${selectedRole}`,
+      `https://ai-employability-system.onrender.com/analyze-resume-role?role=${selectedRole}`,
       {
         method: "POST",
         body: formData,

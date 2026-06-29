@@ -20,7 +20,7 @@ function ATSChecker() {
     formData.append("file", file);
 
     const response = await fetch(
-      "http://127.0.0.1:8000/ats-check",
+      "https://ai-employability-system.onrender.com/ats-check",
       {
         method: "POST",
         body: formData,
