@@ -50,6 +50,7 @@ from models import RoleDB
 
 @app.on_event("startup")
 def load_roles():
+    import insert_roles
     db = SessionLocal()
 
     if db.query(RoleDB).count() == 0:
