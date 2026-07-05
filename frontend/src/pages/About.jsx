@@ -3,15 +3,14 @@ import "./About.css";
 function About() {
   return (
     <div className="about-page">
-
       <div className="about-container">
 
         <h1>About AI Employability System</h1>
 
         <p className="about-intro">
-          The AI Employability System is an intelligent web application
-          designed to help students and job seekers improve their resumes
-          and increase their chances of getting shortlisted by recruiters.
+          The AI Employability System is a web application designed to help
+          students and job seekers improve their resumes through ATS analysis,
+          job-role matching, and personalized career recommendations.
         </p>
 
         <div className="about-grid">
@@ -38,13 +37,12 @@ function About() {
           </div>
 
           <div className="about-card">
-            <h2>AI Powered Insights</h2>
+            <h2>Resume Insights</h2>
 
             <p>
-              Our AI engine extracts resume information, evaluates
-              professional keywords, analyzes resume structure,
-              and provides meaningful insights to help users build
-              stronger resumes.
+              The system extracts resume information, evaluates professional
+              keywords, analyzes resume structure, and provides personalized
+              insights using rule-based skill matching and ATS evaluation.
             </p>
           </div>
 
@@ -53,9 +51,9 @@ function About() {
 
             <p>
               This project aims to bridge the gap between students'
-              resumes and industry expectations by providing intelligent
-              resume evaluation and career guidance using Artificial
-              Intelligence.
+              resumes and industry expectations by providing resume
+              evaluation, ATS analysis, job-role matching, and
+              personalized career recommendations.
             </p>
           </div>
 
@@ -73,9 +71,11 @@ function About() {
 
             <span>Python</span>
 
-            <span>Machine Learning</span>
+            <span>SQLAlchemy</span>
 
-            <span>SQLite</span>
+            <span>PostgreSQL</span>
+
+            <span>Docker</span>
 
             <span>HTML</span>
 
@@ -88,7 +88,6 @@ function About() {
         </div>
 
       </div>
-
     </div>
   );
 }

@@ -92,3 +92,9 @@
 }
 
 }
+.tech-list span{
+    background:#2563eb;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:600;
+}
