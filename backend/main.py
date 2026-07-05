@@ -5,11 +5,15 @@ from models import UserDB, CandidateDB, RoleDB, RoleSkillDB
 from fastapi.middleware.cors import CORSMiddleware
 import PyPDF2
 import re
+
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+         "http://localhost:5173",
+         "https://ai-employability-system.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -41,7 +45,38 @@ class AnalyzeRequest(BaseModel):
 # -------------------------
 # Home
 # -------------------------
+from database import SessionLocal
+from models import RoleDB
 
+@app.on_event("startup")
+def load_roles():
+    db = SessionLocal()
+
+    if db.query(RoleDB).count() == 0:
+        roles = [
+            "Python Developer",
+            "React Developer",
+            "Full Stack Developer",
+            "Java Developer",
+            "Data Analyst",
+            "Data Scientist",
+            "DevOps Engineer",
+            "Cloud Engineer",
+            "Cybersecurity Analyst",
+            "AI Engineer",
+            "Electrical Engineer",
+            "Mechanical Engineer",
+            "Civil Engineer",
+            "Chemical Engineer",
+            "Biotechnologist"
+        ]
+
+        for role in roles:
+            db.add(RoleDB(role_name=role))
+
+        db.commit()
+
+    db.close()
 @app.get("/")
 def home():
     return {"message": "AI Employability System Running"}
