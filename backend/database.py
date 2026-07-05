@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "mysql+pymysql://root:root123@localhost/employability_db"
+DATABASE_URL = "postgresql://neondb_owner:npg_eJ4jv1fcgxlE@ep-young-smoke-aiu7ca3e.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require"
 
 engine = create_engine(DATABASE_URL)
 
